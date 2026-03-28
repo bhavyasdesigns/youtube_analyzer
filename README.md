@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YouTube Competitor Analyzer
 
-## Getting Started
+A simple web app that allows users to analyze a YouTube channel and quickly identify top-performing videos.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Paste a YouTube channel URL
+- View recent videos with key metrics (views, publish date)
+- Sort videos by most viewed or latest
+- Trending indicator based on performance
+- Visual chart for quick comparison
+- Responsive, clean UI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- Tailwind CSS
+- YouTube Data API
+- Cursor
+- Recharts
+- Vercel (deployment)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Instructions
 
-## Learn More
+1. Clone the repository
+2. Run `npm install`
+3. Add your API key in a `.env.local` file
+4. Run `npm run dev`
+5. Open `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+## Approach
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I built this project step by step, starting with a basic working version and then improving it with better UI, sorting, and trending insights.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I focused on making the data easy to understand rather than just displaying raw numbers.
 
-## Deploy on Vercel
+The goal was to help users quickly understand what content is performing well on a competitor’s channel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Instead of focusing only on data, I prioritized:
+- Clear visual hierarchy
+- Sorting and filtering
+- Highlighting trending content
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## AI-Assisted Workflow
+
+- Used ChatGPT for API integration and debugging
+- Used Cursor to refine UI, improve layout, and speed up development
+
+## Future Improvements
+
+- Engagement metrics (likes, comments)
+- AI-based insights on why videos perform well
+- Comparison between multiple channels
+- Export functionality
+
